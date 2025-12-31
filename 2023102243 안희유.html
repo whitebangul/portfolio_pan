@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <title>기말고사포트폴리오</title>
+   <style>
+
+      header{
+         background-color: white;
+         position: fixed;
+         display: flex;
+         width: 100%;
+         top: 0; left: 0; right: 0;
+         height: 50px;
+         align-items: center;
+         padding-left: 60px;
+         padding-right: 60px;
+         text-align: center;
+         justify-content: space-between;
+         border-bottom: 1.3px solid black;
+					padding-right: 10px;
+      }
+      header nav ul{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+      }
+      header nav li{
+         list-style: none;
+         margin-left: 30px;
+         margin-right: 30px;
+         color: dimgray;
+         
+      }
+      h1{
+         color:black;      
+      }
+      body{
+         top:0; left: 0; right:0;
+         margin: 0;
+         text-align: center;
+         padding-top: 50px;
+      }
+      nav li:nth-child(1) {
+         margin-left: auto;
+      }
+
+      nav li:nth-last-child(1) {
+         margin-right: auto;
+      }
+
+      nav li:hover {
+         font-style: italic;
+         color: black;
+      }
+		 .main:hover{
+			 width: 320px;
+			 height: 320px;
+			 transition: 0.7s;
+		 }
+      #search{
+				padding-left: 4px;
+         height: 30px;
+         width: 200px;
+         margin-right:10px;
+				 border-radius: 8px;
+				 border: 1px solid black;
+      }
+      #sear{
+         height: 30px;
+         margin-right: 70px;
+				 border-radius: 8px;
+				 border: 1px solid black;
+      }
+      img{
+         display: block;
+         width: 100%;
+         height: auto;
+         margin: 0;
+      }
+      img:hover{
+              filter:grayscale(100%) blur(2px);
+         transition:all 4s;
+      }
+		 .imgtext{
+			 position: relative;
+		 }
+		 .textimg{
+			 position: absolute;
+			 color: black;
+			 top: 50%;
+			 left: 20%;
+			 transform: translate(-30%, -50%);
+			 font-size: 45px;
+			 color: white;
+			 text-align: left;
+		 }
+		 .introduce{
+			 padding : 20px;
+			 margin-left: 40px;
+			 margin-right: 40px;
+			 background-color: white;
+			 padding-bottom: 10px;
+		 }
+		 @media(max-width:800px){
+       .content{
+				 display: flex;
+				 justify-content: center;
+				 	align-items: center;
+          flex-direction: column;
+       }
+			 h2{
+				 font-size: 20px;
+			 }
+       .content nav, .content aside{
+         border-right:none;
+         border-left:none;
+         flex-basis: auto;
+       }
+		 }
+		 @media(min-width:801px){
+			 .content{
+				 justify-content: center;
+				 display: flex;
+				 flex-direction: row;
+			 }
+			 main{
+				 display: flex;
+				 flex-wrap: wrap;
+				 justify-content: center;
+			 }
+     }
+		 h2{
+			 font-size: 30px;
+		 	margin-bottom: 4px;
+	 	}
+		 .main{
+			 display: flex;
+			 align-items: center;
+			 background-color: #D5E7F6;
+			 flex-direction: column;
+			 width: 300px;
+			 height: 300px;
+			 margin: 10px;
+			 border-radius: 20px;
+			 padding: 30px;
+		 }
+		 .update_container{
+			 padding : 20px;
+
+			 background-color: white;
+			 padding-bottom: 10px;
+			 display: flex;
+			 align-items: center;
+			 justify-content: center;
+		 }
+		 .update{
+			 background-color: lightblue;
+			 width: 100%;
+			 height: 300px;
+			 margin: 30px;
+			 border-radius: 15px;
+			 padding: 20px;
+		 }
+		 footer{
+			 display: flex;
+			 height: 100px;
+			 padding: 20px;
+			 background-color: lightgray;
+			 color: white;
+			 justify-items: center;
+			 flex-direction: column;
+		 }
+		 .footerurl{
+			 background-color: white;
+			 height: 30px;
+			 width: 200px;
+			 border-radius: 20px;
+			 margin: 10px;
+			 color: black;
+
+		 }
+		 .footercon{
+			 margin-top: 20px;
+			 display: flex;
+			 flex-direction: row;
+			 justify-content: center;
+			 
+		 }
+		 #updatenote{
+			 width: 300px;
+			 height: 70px;
+			 border: 0;
+			 background-color: white;
+			 border-radius: 30px;
+			 font-size: 20px;
+			 font-weight: 600;
+			 margin: 10px;
+		 }
+		 #updatenote:hover{
+			 width: 310px;
+			 height: 80px;
+			 transition: 0.7s;
+		 }
+		 #mainimg{
+			 margin-bottom: 30px;
+			 height: 100px;
+			 width: 180px;
+			 border-radius: 50%;
+		 }
+		 #login{
+			 margin-right:10px;
+				height: 30px;
+				width: 13%;
+				border-radius: 30px;
+				border: 1px solid white;
+				font-size: 16px;
+				background-color: darkslateblue;
+				color: white;
+		 }
+		 #login:hover{
+			 width: 15%;
+			 height: 34px;
+			 transition: 0.5s;
+			 background-color: white;
+			 color: black;
+			 border: 1px solid black;
+		 }
+   </style>
+</head>
+<html>
+   <header>
+	<h1>포트폴리오</h1>
+	<nav>
+		<ul>
+			
+			<li>2025작업물</li>
+			<li>2024작업물</li>
+			<li>2023작업물</li>
+			
+			<input type="text" id="search" placeholder="검색할 내용을 입력해주세요">
+			<input type="submit" id="sear" value="검색" onclick="searchresult();">
+			<script>
+				function searchresult() {
+					alert('검색에 실패했습니다');
+				}
+			</script>
+			
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<div class="imgtext">
+		<img src="5.png" alt="배경">
+		<h1 class="textimg">가장 최신 작업물을<br>지금 확인하실 수 있습니다</h1>
+	</div>
+	<div class="introduce">
+		<h2>포트폴리오</h2>
+		다양한 작업물들을 보며 확인해주세요<br><br>
+		<button type="button" id="login">로그인</button><br><br><br>
+					
+		<div class="content">
+			<div class="main" style="background-color: #FFECEC">
+				<img src="3.png" id="mainimg">
+				<h2>영상확인</h2><br>
+				다양한 영상들을<br>확인해 보실 수 있습니다
+			</div>
+			<div class="main">
+				<img src="4.png" id="mainimg">
+				<h2>그림확인</h2><br>
+				다양각색의 그림들을<br> 확인해 보실 수 있습니다<br>
+			</div>
+			<div class="main" style="background-color: #F3ECF9">
+				<img src="2.png" id="mainimg">
+				<h2>사진확인</h2><br>
+				다양각색의 사진들을<br>확인해 보실 수 있습니다
+			</div>
+			<div class="main" style="background-color: #DCF7E1">
+				<img src="1.png" id="mainimg">
+				<h2>게임확인</h2><br>
+				다양각색의 게임들을<br>확인해 보실 수 있습니다<br>
+				지금 체험해보세요
+			</div>
+		</div>
+	</div>
+	<div class="update_container">
+		<div class="update">
+		<h2>최신일자 업로드</h2>
+		가장 최근의 작업물을 확인 가능합니다<br><br>
+			<form action="http://localhost/form/php">
+			<input type="submit" id="updatenote" value="최근 작업물 보러 가기"> 
+			<input type="submit" id="updatenote" value="지난 작업물 보러 가기"> 
+			</form>
+	</div>
+	</div>
+</body>
+<footer>
+	 연성대학교 2023102243 웹툰만화콘텐츠학과 안희유
+	<div class="footercon">
+	<div class="footerurl">
+		<a href="https://youtube.com" style="color: black">유튜브 공식채널</a>
+	</div>
+	<div class="footerurl">
+		<a href="https://section.cafe.naver.com/ca-fe/" style="color: black"> 공식카페 </a>
+	</div>
+	<div class="footerurl">
+		<a href="https://ko-kr.facebook.com/" style="color: black">공식 페이스북</a>
+	</div>
+	</div>
+</footer>
+</html>
